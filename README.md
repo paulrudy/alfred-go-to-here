@@ -4,7 +4,9 @@ Quickly switch the selected path in a MacOS Open/Save dialog based on an Alfred 
 
 ## Setup
 
-Optionally populate the List Filter with default/favorite paths
+Optionally populate the List Filter with default/favorite paths.
+
+Use "Configure Workflow..." to edit keywords.
 
 ## Usage
 
