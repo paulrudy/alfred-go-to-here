@@ -18,4 +18,4 @@ The Open/Save dialog should now have switched to the selected folder or file pat
 
 ## Credits
 
-[ahmadt](https://www.alfredforum.com/profile/9334-ahmadt/), [sepulchra](https://www.alfredforum.com/profile/717-sepulchra/), [vitor](https://www.alfredforum.com/profile/1891-vitor/)
+[ahmadt](https://www.alfredforum.com/profile/9334-ahmadt/), [sepulchra](https://www.alfredforum.com/profile/717-sepulchra/), [vitor](https://www.alfredforum.com/profile/1891-vitor/),[jwrc](https://www.alfredforum.com/profile/55950-jwrc/)
