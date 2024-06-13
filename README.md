@@ -6,7 +6,10 @@ Quickly switch the selected path in a MacOS Open/Save dialog based on an Alfred 
 
 Optionally populate the List Filter with default/favorite paths.
 
-Use "Configure Workflow..." to edit keywords.
+Use "Configure Workflow..." to:
+
+- edit keywords
+- If needed, adjust the name of "Open" dialog windows to match your system's language settings. This value is case sensitive. Default: `Open`.
 
 ## Usage
 
@@ -18,4 +21,4 @@ The Open/Save dialog should now have switched to the selected folder or file pat
 
 ## Credits
 
-[ahmadt](https://www.alfredforum.com/profile/9334-ahmadt/), [sepulchra](https://www.alfredforum.com/profile/717-sepulchra/), [vitor](https://www.alfredforum.com/profile/1891-vitor/),[jwrc](https://www.alfredforum.com/profile/55950-jwrc/)
+[ahmadt](https://www.alfredforum.com/profile/9334-ahmadt/), [sepulchra](https://www.alfredforum.com/profile/717-sepulchra/), [vitor](https://www.alfredforum.com/profile/1891-vitor/), [jwrc](https://www.alfredforum.com/profile/55950-jwrc/)
