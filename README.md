@@ -9,7 +9,7 @@ Optionally populate the List Filter with default/favorite paths.
 Use "Configure Workflow..." to:
 
 - edit keywords
-- If needed, adjust the name of "Open" dialog windows to match your system's language settings. This value is case sensitive. Default: `Open`.
+- If needed, adjust the text of "Open" (default: `Open`) and "Save" (default: `Save`) dialog buttons to match your system's language settings (case sensitive).
 
 ## Usage
 
