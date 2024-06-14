@@ -9,7 +9,8 @@ Optionally populate the List Filter with default/favorite paths.
 Use "Configure Workflow..." to:
 
 - edit keywords
-- If needed, adjust the text of "Open" (default: `Open`) and "Save" (default: `Save`) dialog buttons to match your system's language settings (case sensitive).
+- if needed, adjust the text of "Open" (default: `Open`) and "Save" (default: `Save`) dialog buttons to match your system's language settings (case sensitive)
+- adjust the delay (in milliseconds) before Alfred invokes the "return" key, depending on the speed of your system
 
 ## Usage
 
