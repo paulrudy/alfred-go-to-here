@@ -10,7 +10,9 @@ Use "Configure Workflow..." to:
 
 - edit keywords
 - adjust the text of "Open" (default: `Open`) and "Save" (default: `Save`) dialog buttons to match your system's language settings (case sensitive)
-- depending on the speed of your system, adjust the delay value (in milliseconds, default `250`) used between some actions
+- depending on the speed of your system:
+  - adjust the delay value (in milliseconds, default `250`) used between some actions
+  - adjust the speed at which Alfred simulates typing (default `fast`)
 
 ## Usage
 
