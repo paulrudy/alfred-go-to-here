@@ -7,7 +7,7 @@ Quickly switch the selected path in a MacOS Open/Save/Export dialog based on an 
 Use "Configure Workflow..." to:
 
 - edit keywords
-- adjust the text of "Open" (default: `Open`), "Save" (default: `Save`), and "Export" (default: `Export`) dialog buttons to match your system's language settings (case sensitive)
+- adjust the text of "Open" (default: `Open`), "Save" (default: `Save`), "Export" (default: `Export`), and "Move" (default: `Move`) dialog buttons to match your system's language settings (case sensitive)
 - depending on the speed of your system, adjust the delay value (in milliseconds, default `250`) used between some actions
 
 ## Usage
