@@ -1,0 +1,56 @@
+#!/usr/bin/osascript
+
+property frontmostSheet : null
+
+on run argv
+	set theApp to item 1 of argv
+	set isOpenOrSave to false
+	set localizeOpen to (system attribute "localize_open")
+	set localizeSave to (system attribute "localize_save")
+	set localizeExport to (system attribute "localize_export")
+	set localizeMove to (system attribute "localize_move")
+	tell application "System Events"
+		tell application process theApp
+			repeat with aWindow in windows
+				set theElement to my getFrontmostSheet(theApp, aWindow)
+				if theElement is not null then
+					set isOpenOrSave to my checkButtons(theElement, localizeOpen, localizeSave, localizeExport, localizeMove)
+				else
+					set theElement to aWindow
+					set isOpenOrSave to my checkButtons(theElement, localizeOpen, localizeSave, localizeExport, localizeMove)
+				end if
+				if isOpenOrSave is true then
+					perform action "AXRaise" of theElement
+					delay 0.1
+					exit repeat
+				end if
+			end repeat
+		end tell
+	end tell
+	return isOpenOrSave
+end run
+
+on getFrontmostSheet(a, el)
+	tell application "System Events"
+		try
+			set elCheck to sheet 1 of el
+			set frontmostSheet to elCheck
+			my getFrontmostSheet(a, elCheck)
+		on error theError
+		end try
+		return frontmostSheet
+	end tell
+end getFrontmostSheet
+
+on checkButtons(element, lOpen, lSave, lExport, lMove)
+	set checkButtonsResult to false
+	tell application "System Events"
+		repeat with aButton in buttons of element
+			if name of aButton is lOpen or name of aButton is lSave or name of aButton is lExport or name of aButton is lMove then
+				set checkButtonsResult to true
+				exit repeat
+			end if
+		end repeat
+	end tell
+	return checkButtonsResult
+end checkButtons
