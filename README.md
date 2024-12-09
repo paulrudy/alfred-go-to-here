@@ -1,5 +1,7 @@
 # Go To Here - Alfred workflow
 
+[Available on the Alfred Gallery](https://alfred.app/workflows/paulrudy/go-to-here/)
+
 [Alfred forum thread](https://www.alfredforum.com/topic/6013-go-to-here)
 
 ## Usage
