@@ -2,7 +2,9 @@
 
 [Available on the Alfred Gallery](https://alfred.app/workflows/paulrudy/go-to-here/)
 
-[Alfred forum thread](https://www.alfredforum.com/topic/6013-go-to-here)
+[Alfred forum thread](https://www.alfredforum.com/topic/21963-go-to-here-updated-version/)
+
+For the original workflow on which this one was based, see this [older Alfred forum thread](https://www.alfredforum.com/topic/6013-go-to-here).
 
 ## Usage
 
