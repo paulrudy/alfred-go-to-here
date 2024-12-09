@@ -16,7 +16,7 @@ With an Open/Save/Export dialog active, invoke the workflow with one of the meth
 
 The Open/Save/Export dialog should now have switched to the selected folder or file path.
 
-[Alfred forum thread](https://www.alfredforum.com/topic/6013-go-to-here)
+[Alfred forum thread](https://www.alfredforum.com/topic/21963-go-to-here-updated-version/) (there's also an [older thread](https://www.alfredforum.com/topic/6013-go-to-here))
 
 ### Call workflow from another workflow
 
