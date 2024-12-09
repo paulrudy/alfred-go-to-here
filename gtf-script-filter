@@ -8,7 +8,7 @@ tell application "Finder"
 		try
 			set windowName to name of target of windowItem
 			set windowPath to POSIX path of (target of windowItem as alias)
-			set output to output & "{ \"uid\": \"" & i & "\", \"title\": \"Go to Here:\",\"subtitle\": \"" & windowName & "\", \"arg\": \"" & windowPath & "\" },"
+			set output to output & "{ \"uid\": \"" & i & "\", \"title\": \"" & windowName & "\",\"subtitle\": \"" & windowPath & "\", \"arg\": \"" & windowPath & "\" },"
 		on error
 			-- handle error (skip this window)
 		end try
