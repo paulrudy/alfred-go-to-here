@@ -8,9 +8,9 @@ For the original workflow on which this one was based, see this [older Alfred fo
 
 ## Usage
 
-Quickly switch the selected path in a MacOS Open/Save/Export/Move dialog based on an Alfred selection.
+Quickly switch the selected path in a MacOS Open/Save dialog based on an Alfred selection.
 
-With an Open/Save/Export/Move dialog active, invoke the workflow with one of these methods for selecting a file or folder path:
+With an Open/Save dialog active, invoke the workflow with one of these methods for selecting a file or folder path:
 
 Search for a file or folder and apply to the dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
 
@@ -24,7 +24,9 @@ Alternatively, get paths for open Finder windows and tabs with keyword `gtf`, or
 
 Advanced users can also use the External Trigger from another workflow (not shown, see below).
 
-The workflow looks for English-language button titles in the dialog. Non-English users can change these strings in the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), along with adjusting the speed of execution in case of slower machines.
+The workflow recognizes buttons named "Open" or "Save", as well as "Export", "Move", and "Select", which are used in certain dialogs in some apps.
+
+The workflow looks for those English-language button names in the dialog. Non-English users can change these strings in the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), along with adjusting the speed of execution in case of slower machines.
 
 ### Call workflow from another workflow
 
