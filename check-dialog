@@ -5,7 +5,7 @@ property frontmostSheet : null
 on run argv
 	set theApp to item 1 of argv
 	set isValidDialog to false
-	set buttonNames to {system attribute "localize_open", system attribute "localize_save", system attribute "localize_export", system attribute "localize_move", system attribute "localize_select", system attribute "localize_upload"}
+	set buttonNames to commaSeparatedTextToList(system attribute "button_names", true)
 	tell application "System Events"
 		tell application process theApp
 			repeat with aWindow in windows
@@ -26,6 +26,24 @@ on run argv
 	end tell
 	return isValidDialog
 end run
+
+on commaSeparatedTextToList(theText, doTrim)
+	set {tid, text item delimiters} to {text item delimiters, ","}
+	set theList to {}
+	repeat with i in text items of theText
+		if doTrim is true then
+			set end of theList to trim(i)
+		else
+			set end of theList to i as text
+		end if
+	end repeat
+	set text item delimiters to tid
+	return theList
+end commaSeparatedTextToList
+
+on trim(theText)
+	return (do shell script "echo \"" & theText & "\" | xargs")
+end trim
 
 on getFrontmostSheet(a, el)
 	tell application "System Events"

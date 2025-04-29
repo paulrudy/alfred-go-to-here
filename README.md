@@ -1,5 +1,9 @@
 # Go To Here - Alfred workflow
 
+## Note on updating to version 3
+
+**The workflow configuration has changed: If you previously configured custom button text (e.g. for other languages), you will need to edit the comma-separated list in the configuration to restore your changes.**
+
 [Available on the Alfred Gallery](https://alfred.app/workflows/paulrudy/go-to-here/)
 
 [Alfred forum thread](https://www.alfredforum.com/topic/21963-go-to-here-updated-version/)
