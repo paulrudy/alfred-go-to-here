@@ -1,8 +1,11 @@
 # Go To Here - Alfred workflow
 
-## Note on updating to version 3
+## Note on updating to version 4+
 
-**The workflow configuration has changed: If you previously configured custom button text (e.g. for other languages), you will need to edit the comma-separated list in the configuration to restore your changes.**
+The bundleID has changed since version 3.x. Importing later versions than 3.x will create a new Alfred workflow instead of updating the previous one.
+
+Once you've imported the new version, delete the old version (check the version number beginning with `v` at the top of the main window). This also means that any changes you've made to the workflow's configuration will need to be redone.
+___
 
 [Available on the Alfred Gallery](https://alfred.app/workflows/paulrudy/go-to-here/)
 
