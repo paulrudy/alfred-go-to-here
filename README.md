@@ -31,9 +31,11 @@ Alternatively, get paths for open Finder windows and tabs with keyword `gtf`, or
 
 Advanced users can also use the External Trigger from another workflow (not shown, see below).
 
-The workflow recognizes buttons named "Open" or "Save", as well as "Export", "Move", "Select", and "Upload", which are used in certain dialogs in some apps.
+The workflow recognizes dialog windows based on the action button name. Button names recognized by default: "Open", "Save", "Export", "Move", "Select", "Upload", "Choose", and "Choose file".
 
-The workflow looks for those English-language button names in the dialog. Non-English users can change these strings in the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), along with adjusting the speed of execution in case of slower machines.
+In the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), those button names can be edited to add others, and/or to replace them with non-English versions.
+
+Workflow configuration also allows adjusting the speed of execution in case of slower machines.
 
 ### Call workflow from another workflow
 
