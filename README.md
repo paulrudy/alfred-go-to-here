@@ -2,6 +2,8 @@
 
 ## Note on updating to version 4+
 
+*(If you've updated via the Alfred Gallery, you can ignore this message).*
+
 The bundleID has changed since version 3.x. Importing later versions than 3.x will create a new Alfred workflow instead of updating the previous one.
 
 Once you've imported the new version, delete the old version (check the version number beginning with `v` at the top of the main window). This also means that any changes you've made to the workflow's configuration will need to be redone.
@@ -15,27 +17,17 @@ For the original workflow on which this one was based, see this [older Alfred fo
 
 ## Usage
 
-Quickly switch the selected path in a MacOS Open/Save dialog based on an Alfred selection.
-
-With an Open/Save dialog active, invoke the workflow with one of these methods for selecting a file or folder path:
-
-Search for a file or folder and apply to the dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
+Switch the selected path in a MacOS Open/Save (and similar) dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
 
 ![screenshot of Go to Here universal action](./screenshots/universal-action.png)
 
-Alternatively, get paths for open Finder windows and tabs with keyword `gtf`, or select a file or folder in Alfred with keyword `gth`. `↩` to apply to the dialog.
+Alternatively, get paths for open Finder windows and tabs via the keyword `gtf`, or search files and folders via the keyword `gth`.
 
 ![screenshot of gtf keyword](./screenshots/gtf-keyword.png)
 
 ![screenshot of gth keyword](./screenshots/gth-keyword.png)
 
-Advanced users can also use the External Trigger from another workflow (not shown, see below).
-
-The workflow recognizes dialog windows based on the action button name. Button names recognized by default: "Open", "Save", "Export", "Move", "Select", "Upload", "Choose", and "Choose file".
-
-In the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), those button names can be edited to add others, and/or to replace them with non-English versions.
-
-Workflow configuration also allows adjusting the speed of execution in case of slower machines.
+The workflow recognizes dialog windows based on the action button name. Button names recognized by default: "Open", "Save", "Export", "Move", "Select", "Upload", "Choose", and "Choose file". Those button names can be edited to add others, and/or to replace them with non-English versions, in the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), along with adjusting the speed of execution in case of slower machines.
 
 ### Call workflow from another workflow
 
