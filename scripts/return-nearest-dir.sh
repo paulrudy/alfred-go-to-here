@@ -1,8 +1,9 @@
 #!/bin/zsh
 
-if [[ -d $input_path ]]; then
-  result="$input_path"
-elif [[ -f $input_path ]]; then
+if [[ -f $input_path && $get_container == true ]]; then
   result="$(dirname "$input_path")"
+else
+  result="$input_path"
 fi
+
 echo -n "$result"

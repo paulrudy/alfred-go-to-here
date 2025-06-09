@@ -4,27 +4,35 @@ property frontmostSheet : null
 
 on run argv
 	set theApp to item 1 of argv
-	set isValidDialog to false
-	set buttonNames to commaSeparatedTextToList(system attribute "button_names", true)
-	tell application "System Events"
-		tell application process theApp
-			repeat with aWindow in windows
-				set theElement to my getFrontmostSheet(theApp, aWindow)
-				if theElement is not null then
-					set isValidDialog to my checkButtons(theElement, buttonNames)
-				else
-					set theElement to aWindow
-					set isValidDialog to my checkButtons(theElement, buttonNames)
-				end if
-				if isValidDialog is true then
-					perform action "AXRaise" of theElement
-					delay 0.1
-					exit repeat
-				end if
-			end repeat
+	if theApp is "Finder" then
+		set canContinue to true
+		set getContainer to false
+	else
+		set canContinue to false
+		set isValidDialog to false
+		set getContainer to true
+		set buttonNames to commaSeparatedTextToList(system attribute "button_names", true)
+		tell application "System Events"
+			tell application process theApp
+				repeat with aWindow in windows
+					set theElement to my getFrontmostSheet(theApp, aWindow)
+					if theElement is not null then
+						set isValidDialog to my checkButtons(theElement, buttonNames)
+					else
+						set theElement to aWindow
+						set isValidDialog to my checkButtons(theElement, buttonNames)
+					end if
+					if isValidDialog is true then
+						set canContinue to true
+						perform action "AXRaise" of theElement
+						delay 0.1
+						exit repeat
+					end if
+				end repeat
+			end tell
 		end tell
-	end tell
-	return isValidDialog
+	end if
+	return {canContinue, getContainer}
 end run
 
 on commaSeparatedTextToList(theText, doTrim)

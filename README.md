@@ -17,9 +17,10 @@ For the original workflow on which this one was based, see this [older Alfred fo
 
 ## Usage
 
-Switch the selected path in a MacOS Open/Save (and similar) dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
-
+Switch the selected path in a MacOS Open/Save (and similar) dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
 ![screenshot of Go to Here universal action](./screenshots/universal-action.png)
+
+This can also be used to navigate the currently focused Finder window to the chosen path.
 
 Alternatively, get paths for open Finder windows and tabs via the keyword `gtf`, or search files and folders via the keyword `gth`.
 
@@ -28,6 +29,8 @@ Alternatively, get paths for open Finder windows and tabs via the keyword `gtf`,
 ![screenshot of gth keyword](./screenshots/gth-keyword.png)
 
 The workflow recognizes dialog windows based on the action button name. Button names recognized by default: "Open", "Save", "Export", "Move", "Select", "Upload", "Choose", and "Choose file". Those button names can be edited to add others, and/or to replace them with non-English versions, in the [Workflow Configuration](https://www.alfredapp.com/help/workflows/user-configuration/), along with adjusting the speed of execution in case of slower machines.
+
+In the Finder, the workflow will switch the currently focused tab/window to the chosen path. If no window is open, it will open a new one.
 
 ### Call workflow from another workflow
 
