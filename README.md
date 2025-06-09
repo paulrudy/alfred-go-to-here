@@ -1,5 +1,7 @@
 # Go To Here - Alfred workflow
 
+Switch current path of Open/Save dialogs and Finder windows
+
 ## Note on updating to version 4+
 
 *(If you've updated via the Alfred Gallery, you can ignore this message).*
