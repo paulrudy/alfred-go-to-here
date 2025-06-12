@@ -876,8 +876,6 @@
 			<integer>1</integer>
 		</dict>
 		<dict>
-			<key>config</key>
-			<dict/>
 			<key>type</key>
 			<string>alfred.workflow.utility.junction</string>
 			<key>uid</key>
@@ -1178,27 +1176,6 @@ Icon credit: [Stash Icons](https://github.com/stash-ui/icons). [MIT License](htt
 			<key>config</key>
 			<dict>
 				<key>default</key>
-				<string>gtd</string>
-				<key>placeholder</key>
-				<string></string>
-				<key>required</key>
-				<false/>
-				<key>trim</key>
-				<true/>
-			</dict>
-			<key>description</key>
-			<string></string>
-			<key>label</key>
-			<string>Keyword for default paths input</string>
-			<key>type</key>
-			<string>textfield</string>
-			<key>variable</key>
-			<string>keyword_default_paths</string>
-		</dict>
-		<dict>
-			<key>config</key>
-			<dict>
-				<key>default</key>
 				<string>gtf</string>
 				<key>placeholder</key>
 				<string></string>
@@ -1263,10 +1240,8 @@ Icon credit: [Stash Icons](https://github.com/stash-ui/icons). [MIT License](htt
 			<string>delay_ms</string>
 		</dict>
 	</array>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>4.3.0</string>
+	<string>4.3.1</string>
 	<key>webaddress</key>
 	<string></string>
 </dict>
