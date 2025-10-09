@@ -66,14 +66,18 @@ on getFrontmostSheet(a, el)
 end getFrontmostSheet
 
 on checkButtons(element, btnNames)
-	set checkButtonsResult to false
 	tell application "System Events"
-		repeat with aButton in buttons of element
-			if btnNames contains name of aButton then
-				set checkButtonsResult to true
-				exit repeat
-			end if
-		end repeat
+		try
+			repeat with spGroup in splitter groups of element
+				set spGroupResult to my checkButtons(spGroup, btnNames)
+				if spGroupResult is true then return true
+			end repeat
+		end try
+		try
+			repeat with aButton in buttons of element
+				if btnNames contains name of aButton then return true
+			end repeat
+		end try
+		return false
 	end tell
-	return checkButtonsResult
 end checkButtons
