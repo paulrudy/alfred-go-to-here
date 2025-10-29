@@ -19,7 +19,7 @@ For the original workflow on which this one was based, see this [older Alfred fo
 
 ## Usage
 
-Switch the selected path in a MacOS Open/Save (and similar) dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/). 
+Switch the selected path in a MacOS Open/Save (and similar) dialog via the [Universal Action](https://www.alfredapp.com/help/features/universal-actions/).
 ![screenshot of Go to Here universal action](src/screenshots/universal-action.png)
 
 This can also be used to navigate the currently focused Finder window to the chosen path.
