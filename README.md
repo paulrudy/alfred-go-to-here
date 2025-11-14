@@ -2,6 +2,9 @@
 
 Switch current path of Open/Save dialogs and Finder windows
 
+> [!IMPORTANT]
+> This project has [migrated to Codeberg](https://codeberg.org/paulrudy/alfred-go-to-here) as of release 4.4.2. All updates, issues, and pull requests will occur there.
+
 ## Note on updating to version 4+
 
 *(If you've updated via the Alfred Gallery, you can ignore this message).*
